@@ -9,12 +9,10 @@ def selectionSort(array, size) -> List[int]:
       
         if array[j] < array[minimum]:
             minimum = j
-        temp = array[minimum]
-        array[miminum] = array[j]
-        array[j] = temp
-    
+        temp = array[i]
+        array[i] = array[minimum]
+        array[minimum] = temp      
       
-
 # Do not change the following code
 input_data = input()
 data = []
