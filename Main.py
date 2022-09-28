@@ -1,14 +1,18 @@
 from typing import List
 
 def selectionSort(array, size) -> List[int]:
+  
   for i in range(size-1):
     minimum = i
+    
     for j in range(i+1,size):
+      
         if array[j] < array[minimum]:
             minimum = j
-      temp = array[i]
-      array[i] = array[minimum]
-      array[minimum] = temp
+            
+      temp = array[minimum]
+      array[minimum] = array[i]
+      array[i] = temp
     
       
 
