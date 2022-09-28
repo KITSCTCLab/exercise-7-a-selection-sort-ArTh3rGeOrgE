@@ -11,7 +11,8 @@ def selectionSort(array, size) -> List[int]:
             minimum = j
         temp = array[i]
         array[i] = array[minimum]
-        array[minimum] = temp      
+        array[minimum] = temp
+  return array
       
 # Do not change the following code
 input_data = input()
